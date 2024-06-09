@@ -11,8 +11,11 @@ public class Model {
      */
     private String databaseFile = "hangman_words_ee_test.db";
 
+    private String selectedCategory; // Vaikimisi valitud kategooria
+
     public Model() {
         new Database(this); // Loome andmebaasi ühenduse
+        selectedCategory = chooseCategory; // Vaikimisi "Kõik kategooriad"
     }
 
     /**
@@ -37,5 +40,21 @@ public class Model {
      */
     public void setDatabaseFile(String databaseFile) {
         this.databaseFile = databaseFile;
+    }
+
+    /**
+     * Valitud kategoori
+     * @return tagastab valitud kategooria
+     */
+    public String getSelectedCategory() {
+        return selectedCategory;
+    }
+
+    /**
+     * Seadistab valitud kategooria
+     * @param selectedCategory uus valitud kategooria
+     */
+    public void setSelectedCategory(String selectedCategory) {
+        this.selectedCategory = selectedCategory;
     }
 }

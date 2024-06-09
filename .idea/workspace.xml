@@ -4,55 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3a9a89e-df2f-41b6-935e-2b222c675b42" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hangman_2024_Student.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hangman_words_ee.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hangman_words_ee_test.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hangman_words_en.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang00.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang01.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang03.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang04.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang05.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang06.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang07.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang08.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang09.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/hang11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/01_seaded.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/02_manguvali.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/03_edetabel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sqlite-jdbc-3.41.2.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/MainApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/GameTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/RealTimer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/TextFieldLimit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/listeners/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/datastructures/DataScore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/datastructures/DataWords.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/datastructures/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/panels/GameBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/panels/LeaderBoard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/panels/Settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/panels/package-info.java" afterDir="false" />
+    <list default="true" id="c3a9a89e-df2f-41b6-935e-2b222c675b42" name="Changes" comment="README.md õigesse kohta">
+      <change afterPath="$PROJECT_DIR$/src/listeners/ComboboxChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/Model.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/panels/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/panels/Settings.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +28,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "OkramL"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/OkramL/Hangman_2024_Student.git",
+    "accountId": "ae3227ef-cd68-4eb9-9271-568b491ec1f3"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 5
 }]]></component>
@@ -89,7 +59,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Marko/Documents/JavaApps/Hangman_2024_Student/sqlite-jdbc-3.41.2.1.jar",
+    "last_opened_file_path": "C:/Users/Marko/Documents/JavaApps/Hangman_2024",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,6 +72,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Marko\Documents\JavaApps\Hangman_2024_Student" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MainApp" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="app.MainApp" />
@@ -127,8 +102,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717920889536</updated>
-      <workItem from="1717920890548" duration="13166000" />
+      <workItem from="1717920890548" duration="18929000" />
     </task>
+    <task id="LOCAL−00001" summary="First Commit">
+      <option name="closed" value="true" />
+      <created>1717935860316</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1717935860316</updated>
+    </task>
+    <task id="LOCAL−00002" summary="README.md õigesse kohta">
+      <option name="closed" value="true" />
+      <created>1717936133300</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1717936133300</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,5 +137,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="First Commit" />
+    <MESSAGE value="README.md õigesse kohta" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md õigesse kohta" />
   </component>
 </project>

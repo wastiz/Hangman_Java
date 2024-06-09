@@ -35,7 +35,7 @@ public class Database {
      * Loob andmebaasiga ühenduse
      * @return andmebaasi ühenduse
      */
-    private Connection dbCOnnection() throws SQLException {
+    private Connection dbConnection() throws SQLException {
         // https://stackoverflow.com/questions/13891006/
         if(connection != null) {
             connection.close();
