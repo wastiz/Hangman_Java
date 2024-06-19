@@ -176,18 +176,15 @@ public class GameBoard extends JPanel {
         pnlResult.add(lblResult); // See paneel (pnlResult) on FlowLayout mitte GridBagLayout!
     }
 
-    public void updateLblResult(String character) {
-        if (character == null) {
-            String kriipsud = "";
-            for (int i = 0; i < model.getWord().length(); i++) {
-                kriipsud += "_";
-            }
-            lblResult.setText(kriipsud);
-        } else {
-            model.updateGuessedWord(character);
-            System.out.println(model.getGuessedWord());
-            lblResult.setText(model.getGuessedWord());
-        }
+    public void clearGameBoard () {
+        lblResult.setText("");
+        lblError.setText("Vigased tähed: ");
+        ImageIcon firstIcon = new ImageIcon(model.getImageFiles().getFirst());
+        lblImage.setIcon(firstIcon);
+        model.setWord("");
+        model.setGuessedWord("");
+        model.setMistakes(0);
+        model.clearLetters();
     }
 
     // Komponentide getterid

@@ -21,6 +21,8 @@ public class Model {
     private String databaseFile = "hangman_words_ee_test.db";
     private String word = "";
     private String guessed_word = "";
+    private int mistakes = 0;
+    private ArrayList<String> wrongLetters = new ArrayList<>();
     private String selectedCategory;// Vaikimisi valitud kategooria
     private String[] cmbCategories; // Rippmenüü sisu
     /**
@@ -60,11 +62,9 @@ public class Model {
         Collections.sort(imageFiles); //Sorteerib kasvavalt
         // System.out.println(imageFiles);
     }
-
     public void setWord(String word) {
         this.word = word;
     }
-
     public String getWord() {
         return word;
     }
@@ -74,23 +74,38 @@ public class Model {
      */
 
     public String getGuessedWord() { return guessed_word; }
-
     public void setGuessedWord(String guessedWord) { this.guessed_word = guessedWord; }
 
     public void updateGuessedWord(String character) {
-        if (this.word.contains(character)) {
-            String newWord = "";
-            for (String c : this.word.lines().toList()) {
-                if (Objects.equals(c, character)) {
-                    newWord += c;
-                } else {
-                    newWord += "_";
-                }
-            }
-            setGuessedWord(newWord);
+
+        List<Character> wordToList = new ArrayList<>();
+        for (char c : this.word.toCharArray()) {
+            wordToList.add(c);
         }
+
+        List<Character> guessedWordToList = new ArrayList<>();
+        for (char c : this.guessed_word.toCharArray()) {
+            guessedWordToList.add(c);
+        }
+
+        for (int i = 0; i < wordToList.size(); i++) {
+            if (character.charAt(0) == wordToList.get(i)) {
+                guessedWordToList.set(i, character.charAt(0));
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (char c : guessedWordToList) {
+            sb.append(c);
+        }
+        this.guessed_word = sb.toString();
     }
 
+    public int getMistakes () { return this.mistakes; }
+    public void setMistakes (int mistakes) { this.mistakes = mistakes; }
+    public void addLetter(String character) { this.wrongLetters.add(character); }
+    public void clearLetters() { this.wrongLetters.clear(); }
+    public ArrayList<String> getWrongLetters () { return this.wrongLetters; }
     public String getChooseCategory() {
         return chooseCategory;
     }

@@ -38,8 +38,7 @@ public class ButtonNew implements ActionListener {
 
         String category = model.getSelectedCategory();
         new Database(model).setWordByCategory(category);
-        System.out.println(model.getWord());
-        GameBoard.update
+        view.updateLblResult(null);
     }
 
 }
