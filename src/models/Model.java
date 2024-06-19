@@ -19,7 +19,8 @@ public class Model {
      *  hangman_words_ee_test.db - Eestikeelsed sõnad, edetabel EI ole tühi
      */
     private String databaseFile = "hangman_words_ee_test.db";
-
+    private String word = "";
+    private String guessed_word = "";
     private String selectedCategory;// Vaikimisi valitud kategooria
     private String[] cmbCategories; // Rippmenüü sisu
     /**
@@ -60,10 +61,36 @@ public class Model {
         // System.out.println(imageFiles);
     }
 
+    public void setWord(String word) {
+        this.word = word;
+    }
+
+    public String getWord() {
+        return word;
+    }
     /**
      * Rippmenüü esimene valik enne kategooriaid
      * @return teksti "Kõik kategooriad"
      */
+
+    public String getGuessedWord() { return guessed_word; }
+
+    public void setGuessedWord(String guessedWord) { this.guessed_word = guessedWord; }
+
+    public void updateGuessedWord(String character) {
+        if (this.word.contains(character)) {
+            String newWord = "";
+            for (String c : this.word.lines().toList()) {
+                if (Objects.equals(c, character)) {
+                    newWord += c;
+                } else {
+                    newWord += "_";
+                }
+            }
+            setGuessedWord(newWord);
+        }
+    }
+
     public String getChooseCategory() {
         return chooseCategory;
     }

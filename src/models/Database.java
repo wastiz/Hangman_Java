@@ -99,4 +99,46 @@ public class Database {
             throw new RuntimeException(e);
         }
     }
+
+    public void setWordByCategory(String category) {
+        String query;
+        if (category.equals("Kõik kategooriad")) {
+            query = "SELECT word FROM words ORDER BY RANDOM() LIMIT 1;";
+        } else {
+            query = "SELECT word FROM words WHERE category = ? ORDER BY RANDOM() LIMIT 1;";
+        }
+
+        try {
+            Connection connection = this.dbConnection();
+            String word = null;
+
+            if (category.equals("Kõik kategooriad")) {
+                try (Statement stmt = connection.createStatement();
+                     ResultSet rs = stmt.executeQuery(query)) {
+                    if (rs.next()) {
+                        word = rs.getString("word");
+                    }
+                }
+            } else {
+                try (PreparedStatement pstmt = connection.prepareStatement(query)) {
+                    pstmt.setString(1, category);
+                    try (ResultSet rs = pstmt.executeQuery()) {
+                        if (rs.next()) {
+                            word = rs.getString("word");
+                        }
+                    }
+                }
+            }
+
+            if (word != null) {
+                model.setWord(word);
+            } else {
+                System.out.println("Слов не найдено для категории " + category);
+            }
+
+            connection.close();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

@@ -52,7 +52,7 @@ public class View extends JFrame {
         setTitle("Poomismäng 2024 õpilased"); // JFrame titelriba tekst
         setPreferredSize(new Dimension(500, 250));
         // TODO arenduse lõpus keela akna suurendamine
-        // setResizable(false);
+        setResizable(false);
         getContentPane().setBackground(new Color(250,210,205)); // JFrame taustavärv (rõõsa)
 
         // Loome kolm vahelehte (JPanel)
@@ -79,7 +79,7 @@ public class View extends JFrame {
         tabbedPane.addTab("Edetabel", leaderBoard); // Vaheleht Mängulaud paneeliga gameBoard
 
         // TODO arenduse lõpus mängulaua vahelehte klikkida ei saa
-        // tabbedPane.setEnabledAt(1, false); // Vahelehte mängulaud ei saa klikkida
+        tabbedPane.setEnabledAt(1, false); // Vahelehte mängulaud ei saa klikkida
     }
 
     /**
